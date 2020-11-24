@@ -1,0 +1,47 @@
+.Nav {
+    width: 100%;
+    height: 300px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: var(--grey);
+    color: var(--blue);
+}
+.Nav-logo {
+    height: 100%;
+}
+.Logo {
+    align-self: center;
+    height: 80%;
+    width: auto;
+}
+.Nav-name {
+    margin: 30px;
+    font-size: 30px;
+    color: white;
+}
+.Nav div {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.Nav-links:after {
+    content:"";
+    background: -webkit-linear-gradient(left, var(--grey) 20%, var(--dark-orange) 100%);
+    display: block;
+    height: 5px;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+
+}
+
+
+.Nav a {
+    text-decoration: none;
+    color: var(--blue);
+    margin: 10px;
+}
+
