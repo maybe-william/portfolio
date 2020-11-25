@@ -1,0 +1,40 @@
+.Project {
+    max-width: 450px;
+    min-width: 450px;
+    border: 1px var(--dark-orange) solid;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    margin: 20px;
+}
+
+.Project-header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Project-image {
+    height: 150px;
+}
+
+.Project-meta {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.Project-description {
+    font-size: 15px;
+}
+
+.Project-meta h4, .Project-meta h5 {
+    margin: 5px;
+}
+
+.Project-meta a {
+    font-size: 12px;
+}

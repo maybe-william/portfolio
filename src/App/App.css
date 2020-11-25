@@ -10,7 +10,7 @@
 
 .App-body{
   padding-top: 200px;
-  padding-bottom: 300px;
+  padding-bottom: 400px;
   background-color: var(--grey);
   display: flex;
   flex-direction: column;
@@ -21,6 +21,6 @@
 }
 
 .App-link {
-  color: #61dafb;
+    text-decoration: none;
+    color: var(--blue);
 }
-
