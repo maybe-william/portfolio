@@ -22,20 +22,24 @@ class Nav extends React.Component {
 
 
     render() {
-    return (
-        <header className="Nav" style={(this.state.scrollHeight > 150) ? {height: "150px"} : {height: (300 - this.state.scrollHeight).toString() + "px"}}>
-        <div className="Nav-logo">
-        <img src={process.env.PUBLIC_URL + '/img/logo.jpg'} className="Logo" alt="logo" />
-        <h3 className="Nav-name" >William Dyrland-Marquis</h3>
-        </div>
-        <div className="Nav-links" style={(this.state.scrollHeight > 150) ? {fontSize: "12px"} : {fontSize: (20 - (this.state.scrollHeight/20)).toString() + "px"}}>
-        <h1><a href='#about'>About</a></h1>
-        <h1><a href='#projects'>Projects</a></h1>
-        <h1><a href='#resume'>Resume</a></h1>
-        <h1><a href='#contact'>Contact</a></h1>
-        </div>
-        </header>
-  );
+        const height = (this.state.scrollHeight > 150) ? 75 : (225 - this.state.scrollHeight);
+        const linkFont = (this.state.scrollHeight > 150) ? 7 : (15 - (this.state.scrollHeight/20));
+        const nameFactor = (this.state.scrollHeight > 150) ? 15 : (30 - (this.state.scrollHeight/10));
+
+        return (
+            <header className="Nav" style={{height: height.toString() + "px"}}>
+            <div className="Nav-logo">
+            <img src={process.env.PUBLIC_URL + '/img/logo.jpg'} className="Logo" alt="logo" />
+            <h3 className="Nav-name" style={{fontSize: nameFactor.toString() + "px", margin: nameFactor.toString() + "px"}}>William <br /> Dyrland-Marquis</h3>
+            </div>
+            <div className="Nav-links" style={{fontSize: linkFont.toString() + "px"}}>
+            <h1><a href='#about'>About</a></h1>
+            <h1><a href='#projects'>Projects</a></h1>
+            <h1><a href='#resume'>Resume</a></h1>
+            <h1><a href='#contact'>Contact</a></h1>
+            </div>
+            </header>
+        );
     }
 }
 

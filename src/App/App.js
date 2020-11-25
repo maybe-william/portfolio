@@ -15,9 +15,10 @@ function App() {
     <div className="App">
       <Nav />
       <div className="App-body">
-      <p>
-      test
-      </p>
+      <About />
+      <Projects />
+      <Resume />
+      <Contact />
       </div>
     </div>
   );

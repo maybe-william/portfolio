@@ -1,17 +1,22 @@
-//import '../App.css';
+import Box from '../Box/Box';
 
-function About() {
-  return (
-    <div className="App">
-      <Nav />
-      <div className="App-body">
-      //<About />
-      //<Projects />
-      //<Resume />
-      //<Contact />
-      </div>
-    </div>
-  );
+function Projects(props) {
+    return (
+        <Box anchor="projects" title="Projects">
+        <p>
+        Project
+        </p>
+        <p>
+        Project
+        </p>
+        <p>
+        Project
+        </p>
+        <p>
+        Project
+        </p>
+        </Box>
+    );
 }
 
-export default About;
+export default Projects;

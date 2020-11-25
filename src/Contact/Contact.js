@@ -1,17 +1,22 @@
-//import '../App.css';
+import Box from '../Box/Box';
 
-      //<Nav />
-      //<About />
-      //<Projects />
-      //<Resume />
-      //<Contact />
-function Contact() {
-  return (
-    <div className="App">
-      <div className="App-body">
-      </div>
-    </div>
-  );
+function Contact(props) {
+    return (
+        <Box anchor="contact" title="Contact">
+        <p>
+        Contact
+        </p>
+        <p>
+        Contact
+        </p>
+        <p>
+        Contact
+        </p>
+        <p>
+        Contact
+        </p>
+        </Box>
+    );
 }
 
 export default Contact;

@@ -1,0 +1,49 @@
+.Box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    background-color: var(--grey);
+    color: var(--blue);
+    position: relative;
+}
+.Box-header {
+    padding-top: 100px;
+    color: var(--blue);
+}
+.Box-content {
+    color: white;
+    padding: 10px;
+}
+
+.Box-header h2:after {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    content:"";
+    background: -webkit-linear-gradient(left, var(--grey) 10%, var(--dark-orange) 50%, var(--grey) 90%);
+    display: block;
+    height: 5px;
+    width: 100%;
+    bottom: 0;
+    position: relative;
+}
+
+.Box-content-wrapper:before {
+    content:"";
+    background: -webkit-linear-gradient(bottom, var(--dark-orange) 0%, var(--grey) 90%);
+    display: block;
+    width: 5px;
+    height: calc(100% - 200px);
+    bottom: 0;
+    position: absolute;
+}
+
+.Box-content-wrapper:after {
+    margin-top: 15px;
+    content:"";
+    background: -webkit-linear-gradient(left, var(--dark-orange) 0%, var(--grey) 90%);
+    display: block;
+    height: 5px;
+    width: 100%;
+    bottom: 0;
+    position: relative;
+}
